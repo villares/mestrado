@@ -1,6 +1,6 @@
 """
-The Art of COMPUTER GRAPHICS Programming - chapter 9 example
-Conversão para o Processing Modo Python  da conversão para Processing feita pro Viviane Alencar
+The Art of COMPUTER GRAPHICS Programming - chapter 9
+Conversão para o Processing Modo Python da conversão para Processing feita pro Viviane Alencar
 http://lapac.fec.unicamp.br/index.php/re/programming/projects/taocgp/
 """
 
