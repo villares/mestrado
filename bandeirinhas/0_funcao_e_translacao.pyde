@@ -1,13 +1,20 @@
-def bandeirinha(px, py, tamanho):
+"""
+Exemplo de declaração de uma função com parâmetros; translação do sistema de cordenadas,
+preservando o sistema orginal numa pilha com pushMatrix() e chamada da nova função.
+Nota: A área de desenho padrão do Processing é 100 x 100 pixels, com um fundo cinza.
+"""
+
+def bandeirinha(px, py, tamanho=50):
+    """ Desenha polígono em torno das coordenadas passadas, com tamanho padrão 50 """
     metade = tamanho / 2
-    with pushMatrix():
-        translate(px, py)
-        beginShape()
+    with pushMatrix():   # preseservando o sistema de coordenadas anterior,
+        translate(px, py)  # translada o sistema de coordenadas
+        beginShape()  # inicia polígono
         vertex(-metade, -metade)
         vertex(-metade, metade)
         vertex(0, 0)
         vertex(metade, metade)
         vertex(metade, -metade)
-        endShape(CLOSE)
+        endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
 
-bandeirinha(50, 50, 50)
+bandeirinha(50, 50)
