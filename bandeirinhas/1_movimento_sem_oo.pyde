@@ -1,7 +1,7 @@
 """
 Exemplo de movimentação de uma figura poligonal, ainda sem orientação a objetos.
-O efeito de animação surge com o redesenho da tela pelo draw(), sempre limpo por
-um fundo preto e atualizaço (incremento) de variáveis globais x e y.
+O efeito de animação surge com o redesenho da tela no draw(), sempre limpa por
+um fundo preto e com atualização (incremento) de variáveis globais x e y.
 """
 
 def setup():
