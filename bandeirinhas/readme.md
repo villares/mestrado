@@ -1,4 +1,4 @@
-# Orientaço a objetos com bandeirinhas
+# Orientação a objetos com bandeirinhas
 ## um exemplo em 5 passos
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
     
