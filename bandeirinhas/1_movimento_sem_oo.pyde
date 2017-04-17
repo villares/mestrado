@@ -1,5 +1,7 @@
 """
-Exemplo de movimentação de uma figura poligonal, ainda sem orientação a objetos
+Exemplo de movimentação de uma figura poligonal, ainda sem orientação a objetos.
+O efeito de animação surge com o redesenho da tela pelo draw(), sempre limpo por
+um fundo preto e atualizaço (incremento) de variáveis globais x e y.
 """
 
 def setup():
@@ -13,8 +15,8 @@ def draw():
     global x, y
     background(0)  # atualização do desenho, fundo preto
     bandeirinha(x, y)  # desenha o polígono
-    x += 1
-    y += 1
+    x += 1  # incrementa o x
+    y += 1  # incrementa o y
     if x > width + 25:
         x = -25
     if y > height + 25:
