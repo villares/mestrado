@@ -6,6 +6,7 @@ def setup():
     """ Instancia três bandeirinhas """
     global bandeira_a, bandeira_b, bandeira_c
     size(100, 100)  # área de desenho
+    half_width, half_h
     bandeira_a = Bandeirinha(width / 2, height / 2, 50)
     bandeira_b = Bandeirinha(width / 2, height / 2, 70)
     bandeira_c = Bandeirinha(width / 2, height / 2, 80)
