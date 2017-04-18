@@ -1,6 +1,6 @@
 """
-Classe Bandeirinha, com cor e velocidades sorteadas.
-Ao sair da tela, o objeto é deslocado para o limite oposto.
+Classe Bandeirinha com cor e velocidades sorteadas.
+Ao sair da tela, o objeto é deslocado para o lado oposto.
 """
 
 def setup():
@@ -48,7 +48,7 @@ class Bandeirinha():
             endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
 
     def anda(self):
-        """ atualiza a posição do objeto e devolve do lado oposto se sair """
+        """ atualiza a posição do objeto e manda para o lado oposto se sair """
         self.x += self.vx
         self.y += self.vy
         metade = self.tamanho / 2
