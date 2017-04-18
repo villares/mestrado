@@ -9,4 +9,5 @@
 1. Redesenhando formas e atualizando variáveis no loop principal
 2. Primeira aproximação da classe Bandeirinha
 3. Ampliando a classe e instanciando múltiplos objetos
-4. Uma lista dinâmica de objetos
+4. Uma lista de objetos
+Bonus: Acrescentando e removendo bandeirinhas (em breve!)
