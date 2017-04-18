@@ -1,15 +1,15 @@
 """
-Exemplo de uso da Classe Bandeirinhas, objetos com cores e velocidades sorteadas.
+Exemplo de uso da Classe Bandeirinhas, 3 objetos com cores e velocidades sorteadas.
 """
 
 def setup():
     """ Instancia três bandeirinhas """
     global bandeira_a, bandeira_b, bandeira_c
     size(100, 100)  # área de desenho (width, height)
-    meia_largura, meia_largura = width / 2., height / 2. # floats
-    bandeira_a = Bandeirinha(meia_largura, meia_largura, 50)
-    bandeira_b = Bandeirinha(meia_largura, meia_largura, 70)
-    bandeira_c = Bandeirinha(meia_largura, meia_largura, 80)
+    meia_largura, meia_altura = width / 2., height / 2. # floats
+    bandeira_a = Bandeirinha(meia_largura, meia_altura, 50)
+    bandeira_b = Bandeirinha(meia_largura, meia_altura, 70)
+    bandeira_c = Bandeirinha(meia_largura, meia_altura, 80)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
