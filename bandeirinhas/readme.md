@@ -11,4 +11,4 @@
 3. Ampliando a classe e instanciando múltiplos objetos
 4. Uma lista de objetos
 
-Bonus: Acrescentando e removendo bandeirinhas (em breve!)
+Extra: Acrescentando e removendo bandeirinhas; Mude a cor com o mouse próximo.
