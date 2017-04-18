@@ -7,9 +7,10 @@ bandeirinhas = []  # lista de objetos
 
 def setup():
     """ Define área de desenho e popula lista de bandeirinhas """
-    size(400, 400)  # área de desenho
+    size(400, 400)  # área de desenho (width, height)
+    meia_largura, meia_largura = width / 2., height / 2. # floats
     for _ in range(50):
-        bandeirinhas.append(Bandeirinha(width / 2, height / 2))
+        bandeirinhas.append(Bandeirinha(meia_largura, meia_largura))
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
