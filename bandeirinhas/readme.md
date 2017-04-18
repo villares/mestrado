@@ -9,6 +9,6 @@
 1. Redesenhando formas e atualizando variáveis no loop principal
 2. Primeira aproximação da classe Bandeirinha
 3. Ampliando a classe
-4. instanciando múltiplos objetos
+4. Instanciando mais alguns objetos
 5. Uma lista de objetos
-6. Acrescentando e removendo objetosl; Mudança da cor com o mouse próximo.
+6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
