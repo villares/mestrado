@@ -13,7 +13,7 @@ def setup():
 def draw():
     """ Laço principal de repetição do Processing """
     global x, y
-    background(0)  # atualização do desenho, fundo preto
+    background(0)  # limpeza do frame, fundo preto
     bandeirinha(x, y)  # desenha o polígono
     x += 1  # incrementa o x
     y += 1  # incrementa o y
