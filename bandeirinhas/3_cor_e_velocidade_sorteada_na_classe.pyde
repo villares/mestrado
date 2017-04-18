@@ -1,5 +1,6 @@
 """
 Classe Bandeirinha, com cor e velocidades sorteadas.
+Ao sair da tela, o objeto é deslocado para o limite oposto.
 """
 
 def setup():
