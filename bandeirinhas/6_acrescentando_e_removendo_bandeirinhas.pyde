@@ -8,9 +8,10 @@ bandeirinhas = []  # lista de objetos
 def setup():
     """ Define área de desenho e popula lista de bandeirinhas """
     size(400, 400)  # área de desenho
-    meia_largura, meia_altura = width / 2., height / 2.
+    meia_largura, meia_altura = width / 2, height / 2
     for _ in range(50):
-        bandeirinhas.append(Bandeirinha(meia_largura, meia_altura))
+        nova_bandeirinha = Bandeirinha(meia_largura, meia_altura)
+        bandeirinhas.append(nova_bandeirinha)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
@@ -40,8 +41,8 @@ class Bandeirinha():
     """ Classe Bandeirinha, cor sorteada, tamanho sorteado por default """
 
     def __init__(self, px, py, ptamanho=None):
-        self.x = px
-        self.y = py
+        self.x = float(px)
+        self.y = float(py)
         if ptamanho:
             self.tamanho = ptamanho
         else:
