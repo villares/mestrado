@@ -6,7 +6,7 @@ def setup():
     """ Instancia três bandeirinhas """
     global bandeira_a, bandeira_b, bandeira_c
     size(100, 100)  # área de desenho (width, height)
-    meia_largura, meia_altura = width / 2., height / 2. # floats
+    meia_largura, meia_altura = width / 2, height / 2
     bandeira_a = Bandeirinha(meia_largura, meia_altura, 50)
     bandeira_b = Bandeirinha(meia_largura, meia_altura, 70)
     bandeira_c = Bandeirinha(meia_largura, meia_altura, 80)
@@ -25,8 +25,8 @@ class Bandeirinha():
     """ Classe Bandeirinha, cor sorteada, velocidade sorteada """
 
     def __init__(self, px, py, ptamanho=None):
-        self.x = px
-        self.y = py
+        self.x = float(px)
+        self.y = float(py)
         if ptamanho:
             self.tamanho = ptamanho
         else:
