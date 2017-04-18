@@ -1,5 +1,8 @@
 # Orientação a objetos com bandeirinhas
-## um exemplo em 5 passos
+
+![output passo quatro](s4.gif)
+
+## Um exemplo em 5 passos
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
     
 0. Definindo funções e deslocando o sistema de cordenadas
