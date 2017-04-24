@@ -31,8 +31,9 @@ def bandeirinha(px, py, tamanho=50):
 bandeirinha(50, 50)
 ```
 Exemplo de declaração de uma função com parâmetros; translação do sistema de cordenadas,
-preservando o sistema orginal com pushMatrix() e chamada da nova função.
-Nota: A área de desenho padrão do Processing é 100 x 100 pixels, com um fundo cinza.
+preservando o sistema orginal com `pushMatrix()`.
+
+Quando apenas invocada a função `bandeirinha()` a área de desenho padrão do Processing é 100 x 100 pixels, com um fundo cinza.
 
 ### 1. Redesenhando formas e atualizando variáveis no loop principal
 
@@ -43,4 +44,5 @@ Nota: A área de desenho padrão do Processing é 100 x 100 pixels, com um fundo
 ### 4. Instanciando mais alguns objetos
 
 ### 5. Uma lista de objetos
-6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
+
+### 6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
