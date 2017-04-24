@@ -8,7 +8,7 @@
 Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aulas com pequenas variações. Para poder aproveitar o exemplo os alunos tem em aulas anteriores contato com programação procedural além de vocabulário específico da plataforma Processing:
 * Declaração de variáveis e noções de tipagem;
 * Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
-* Controle de atributos gráficos `fill`, stroke`, `noStroke`, `noFill`, `background`;
+* Controle de atributos gráficos `fill`, `stroke`, `noStroke`, `noFill`, `background`;
 * Controle de fluxo de execução e laços `if`, `else`, `for`;
 * Declaração de funções com e sem parâmetros;
 * Controle do sistema de coordenadas `pushMatrix`, `translate`, `rotate`, `scale`, `popMatrix`.
