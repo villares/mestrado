@@ -6,12 +6,12 @@
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
 
 Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aulas com pequenas variações. Para poder aproveitar o exemplo os alunos tem em aulas anteriores contato com programação procedural além de vocabulário específico da plataforma Processing:
-* declaração de variáveis, tipagem;
-* métodos de desenho `rect, line, ellipse, beginShape, vertex e endShape`;
-* controle de atributos gráficos `fill, stroke, noStroke, noFill, background`;
-* controle de fluxo de execução e laços `if, else, for`;
-* declaração de funções com e sem parâmetros;
-* controle do sistema de coordenadas `pushMatrix, translate, rotate, scale, popMatrix`;
+* Declaração de variáveis e noções de tipagem;
+* Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
+* Controle de atributos gráficos `fill`, stroke`, `noStroke`, `noFill`, `background`;
+* Controle de fluxo de execução e laços `if`, `else`, `for`;
+* Declaração de funções com e sem parâmetros;
+* Controle do sistema de coordenadas `pushMatrix`, `translate`, `rotate`, `scale`, `popMatrix`.
 
 ### 0. Definindo funções e deslocando o sistema de cordenadas
  ```python
