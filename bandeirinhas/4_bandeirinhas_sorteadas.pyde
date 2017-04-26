@@ -1,5 +1,5 @@
 """
-Exemplo de uso da Classe Bandeirinhas, 3 objetos com cores e velocidades sorteadas.
+Ampliando a classe Bandeirinha, com cores e velocidades sorteadas.
 """
 
 def setup():
