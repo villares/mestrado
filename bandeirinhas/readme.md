@@ -39,9 +39,9 @@ Quando apenas invocada a função `bandeirinha()` a área de desenho padrão do 
 
 ### 2. Primeira aproximação da classe Bandeirinha
 
-### 3. Ampliando a classe
+### 3. Instanciando mais alguns objetos
 
-### 4. Instanciando mais alguns objetos
+### 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
 
 ### 5. Uma lista de objetos
 
