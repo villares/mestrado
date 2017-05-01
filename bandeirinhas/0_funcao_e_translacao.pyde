@@ -5,7 +5,7 @@ Nota: A área de desenho padrão do Processing é 100 x 100 pixels, com um fundo
 """
 
 def setup():
-    """ Código executado uma vez no início pelo Processing """
+    """ Código chamado uma vez no início da execução pelo Processing """
     size(100, 100)  # define as dimensões do 'canvas' do Processing
     bandeirinha(50, 50)  # chama a função bandeirinha
 
