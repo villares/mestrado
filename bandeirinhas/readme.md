@@ -33,7 +33,7 @@ def bandeirinha(px, py, tamanho=50):
         vertex(metade, -metade)
         endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
 ```
-A definição da função `setup()` não é obrigatória no Modo Python, mas é a parte inicial da estrutura `setup()`/`draw()` usada na maior parte dos programas que trabalham com interação ou movimento, e é invocada uma única vez no início da execução. Note que neste já está definida a função `bandeirinha()`. 
+A definição da função `setup()` não é obrigatória no Modo Python, mas é a parte inicial da estrutura `setup()`/`draw()` usada na maior parte dos programas que trabalham com interação ou movimento, e é invocada uma única vez no início da execução. Note que neste momento já estará definida a função `bandeirinha()`. 
 
 A função `bandeirinha()`recebe como parâmetros as coordenadas onde deve ser desenhada; Faz uma translação do sistema de cordenadas, move a origem, mas antes disso preserva o sistema orginal de coordenadas com `pushMatrix().
 
