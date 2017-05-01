@@ -5,7 +5,7 @@
 ## Um exemplo em 7 passos
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
 
-Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aulas com pequenas variações. Para poder aproveitar o exemplo os alunos tem em aulas anteriores contato com programação procedural além de vocabulário específico da plataforma Processing:
+Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aulas com pequenas variações. Para poder aproveitar o exemplo os alunos tem em aulas anteriores tiveram contato com programação procedural/imperativa[1] além de vocabulário específico da plataforma Processing:
 * Declaração de variáveis e noções de tipagem;
 * Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
 * Controle de atributos gráficos `fill`, `stroke`, `noStroke`, `noFill`, `background`;
@@ -15,6 +15,11 @@ Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aul
 
 ### 0. Definindo funções e deslocando o sistema de cordenadas
  ```python
+def setup():
+    """ Código chamado uma vez no início da execução pelo Processing """
+    size(100, 100)  # define as dimensões do 'canvas' do Processing
+    bandeirinha(50, 50)  # chama a função bandeirinha
+ 
 def bandeirinha(px, py, tamanho=50):
     """ Desenha polígono em torno das coordenadas passadas, com tamanho padrão 50 """
     metade = tamanho / 2
@@ -27,13 +32,11 @@ def bandeirinha(px, py, tamanho=50):
         vertex(metade, metade)
         vertex(metade, -metade)
         endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
-
-bandeirinha(50, 50)
 ```
-Exemplo de declaração de uma função com parâmetros; translação do sistema de cordenadas,
-preservando o sistema orginal com `pushMatrix()`.
+A definição da função `setup()` não é obrigatória no Modo Python, mas é a parte inicial da estrutura `setup()`/`draw()` usada na maior parte dos programas que trabalham com interação ou movimento, e é invocada uma única vez no início da execução. Note que neste já está definida a função `bandeirinha()`. 
 
-Quando apenas invocada a função `bandeirinha()` a área de desenho padrão do Processing é 100 x 100 pixels, com um fundo cinza.
+A função `bandeirinha()`recebe como parâmetros as coordenadas onde deve ser desenhada; Faz uma translação do sistema de cordenadas, move a origem, mas antes disso preserva o sistema orginal de coordenadas com `pushMatrix().
+
 
 ### 1. Redesenhando formas e atualizando variáveis no loop principal
 
@@ -46,3 +49,5 @@ Quando apenas invocada a função `bandeirinha()` a área de desenho padrão do 
 ### 5. Uma lista de objetos
 
 ### 6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
+
+[1] http://cs.lmu.edu/~ray/notes/paradigms/
