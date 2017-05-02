@@ -68,7 +68,7 @@ def draw():
         y = -25
 ```
 ```
-# [...o código continua com a def bandeirinha mostrada anteriormente...] 
+...o código continua com a def bandeirinha mostrada anteriormente
 ```
 ### 2. Primeira aproximação da classe Bandeirinha
 
@@ -146,7 +146,9 @@ def draw():
     bandeira_c.desenha()
     bandeira_c.anda()
     
-# [...o código continua com a classe Bandeirinha mostrada anteriormente...]     
+```
+```
+...o código continua com a classe Bandeirinha mostrada anteriormente
 ```
 ### 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
 
@@ -235,6 +237,9 @@ def draw():
         bandeira.desenha()
         bandeira.anda()
 ```
+```
+...o código continua com a classe Bandeirinha mostrada anteriormente
+```
 
 ### 6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
 
@@ -252,7 +257,7 @@ def keyPressed():
     if key == ' ' and len(bandeirinhas) > 1:
         removida = bandeirinhas.pop()    
 ```
-E o método de desenho da bandeirinha agora sofre a influência da distância do mouse;
+E o método de `desenha()` da bandeirinha agora sofre a influência da distância do mouse;
 
 ```python
     def desenha(self):
