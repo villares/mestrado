@@ -8,7 +8,8 @@
 Bandeirinhas são um tema recorrente da cultura visual brasileira, visível não só nas Festas Juninas como explorado largamete por artistas visuais como Alfredo Volpi. Foram escolhidas para gerar reconhecimento e interesse visual nas imagens e animações produzidas.
 
 Numa aula que se desenvolve normalmente em cerca de 7 etapas, são introduzidos conceitos de orientação a objetos: Classe, atributos de dados e métodos, instâncias e encapsulamento. Não são abordadadas ainda questões de herança e composição.
-Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  com programação procedural/imperativa[1] além de vocabulário específico da plataforma Processing:
+Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  com programação [procedural/imperativa](http://cs.lmu.edu/~ray/notes/paradigms/)
+ além de vocabulário específico da plataforma Processing:
 * Declaração de variáveis e noções de tipagem;
 * Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
 * Controle de atributos gráficos `fill`, `stroke`, `noStroke`, `noFill`, `background`;
@@ -231,7 +232,8 @@ def setup():
     size(400, 400)  # área de desenho (width, height)
     meia_largura, meia_altura = width / 2, height / 2
     for _ in range(50):
-        bandeirinhas.append(Bandeirinha(meia_largura, meia_altura))
+        nova_bandeirinha = Bandeirinha(meia_largura, meia_altura)
+        bandeirinhas.append(nova_bandeirinha)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
@@ -282,5 +284,3 @@ E o método de `desenha()` da bandeirinha agora sofre a influência da distânci
             vertex(metade, -metade)
             endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
 ```
-
-[1] http://cs.lmu.edu/~ray/notes/paradigms/
