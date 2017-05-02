@@ -5,7 +5,10 @@
 ## Um exemplo em 7 passos
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
 
-Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aulas com pequenas variações. Para poder aproveitar o exemplo os alunos tem em aulas anteriores tiveram contato com programação procedural/imperativa[1] além de vocabulário específico da plataforma Processing:
+Bandeirinhas são um tema recorrente da cultura visual brasileira, visível não só nas Festas Juninas como explorado largamete por artistas visuais como Alfredo Volpi. Foram escolhidas para gerar reconhecimento e interesse visual nas imagens e animações produzidas.
+
+Numa aula que se desenvolve normalmente em cerca de 7 etapas, são introduzidos conceitos de orientação a objetos: Classe, atributos de dados e métodos, instâncias e encapsulamento. Não são abordadadas ainda questões de herança e composição.
+Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  com programação procedural/imperativa[1] além de vocabulário específico da plataforma Processing:
 * Declaração de variáveis e noções de tipagem;
 * Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
 * Controle de atributos gráficos `fill`, `stroke`, `noStroke`, `noFill`, `background`;
