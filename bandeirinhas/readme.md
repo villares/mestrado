@@ -69,6 +69,55 @@ def draw():
 ```
 ### 2. Primeira aproximação da classe Bandeirinha
 
+```python
+def setup():
+    """ Código de configuração, executado no início pelo Processing """
+    global bandeira
+    size(100, 100)  # área de desenho
+    bandeira = Bandeirinha(width / 2, height / 2)
+
+def draw():
+    """ Laço principal de repetição do Processing """
+    background(0)  # atualização do desenho, fundo preto
+    bandeira.desenha()
+    bandeira.anda()
+
+class Bandeirinha():
+    """ Classe Bandeirinha, com métodos de desenho e atualizaçao ('anda') """
+
+    def __init__(self, px, py, ptamanho=50):
+        self.x = px
+        self.y = py
+        self.tamanho = ptamanho
+
+    def desenha(self):
+        """ Desenha polígono em torno das coordenadas do objeto """
+        metade = self.tamanho / 2
+        with pushMatrix():   # preseservando o sistema de coordenadas anterior
+            translate(self.x, self.y)  # translada o sistema de coordenadas
+            beginShape()  # inicia polígono
+            vertex(-metade, -metade)
+            vertex(-metade, metade)
+            vertex(0, 0)
+            vertex(metade, metade)
+            vertex(metade, -metade)
+            endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
+
+    def anda(self):
+        """ atualiza a posição do objeto """
+        self.x += 1
+        self.y += 1
+        if self.x > width + 25:
+            self.x = -25
+        if self.y > height + 25:
+            self.y = -25
+```
+Vamos agora obter o mesmo comportamento usando um objeto da classe `Bandeirinha`.
+A classe é definida pelo bloco `class Bandeirinha():` que começa com o método especial `__init__()` que na construção de um novo objeto da classe inicializa seus atributos de dados (campos) de posição e tamanho.
+O método `desenha()` é praticamente a função que escrevemos no passo inicial, não requer mais os parâmetros de posição, uma vez que usa os atributos de posição e tamanho do próprio objeto (instância) quando executado.
+O método `anda()` contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) do objeto.
+No bloco `setup()` criamos uma instância de bandeirinha no meio da àrea de desenho com a linha`bandeira = Bandeirinha(width / 2, height / 2)` e no bloco `draw()` chamamos os métodos de desenho e atualização com `bandeira.desenha()` e `bandeira.anda()` respectivamente. 
+
 ### 3. Instanciando mais alguns objetos
 
 ### 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
