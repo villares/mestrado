@@ -10,7 +10,8 @@ def setup():
     size(400, 400)  # área de desenho (width, height)
     meia_largura, meia_altura = width / 2., height / 2. # floats
     for _ in range(50):
-        bandeirinhas.append(Bandeirinha(meia_largura, meia_altura))
+        nova_bandeirinha = Bandeirinha(meia_largura, meia_altura)
+        bandeirinhas.append(nova_bandeirinha)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
