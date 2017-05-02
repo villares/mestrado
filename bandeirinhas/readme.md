@@ -17,7 +17,9 @@ Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aul
 
 Começamos com a definição de uma função `bandeirinha()` que recebe como parâmetros as coordenadas onde deve ser desenhada (e pode receber um parâmetro de tamanho opcional) produzindo um polígono fechado em forma de bandeirinha.  
 
-No lugar de somar as cordenadas de localização recebidas como parâmetros aos vértices do polígonos usamos a estratégia de translação do sistema de cordenadas, moveremos a origem e em seguida desenharemos o polígono. Antes da translação é interessante preservar o sistema orginal de coordenadas com o comando `pushMatrix()`. Isso pode ser feito simplesmente invocando `pushMatrix()` antes da translação e `popMatrix()` ao final do desenho (restaurando o sistema de coordenadas original), ou com a linha `with pushMatrix():` seguida de um bloco indentado de código que executa a translação e o desenho (ao final do bloco, encerra-se o contexto e a origem é restaurada), e é o que faremos.
+No lugar de somar as cordenadas de localização recebidas como parâmetros aos vértices do polígonos usamos a estratégia de translação do sistema de cordenadas, moveremos a origem e em seguida desenharemos o polígono.
+
+Antes da translação é necessário preservar o sistema orginal de coordenadas com o comando `pushMatrix()`. Isso pode ser feito simplesmente invocando `pushMatrix()` antes da translação e `popMatrix()` ao final do desenho, ou com a linha `with pushMatrix():` seguida de um bloco indentado de código que executa a translação e o desenho (ao final do bloco, encerra-se o contexto e a origem é restaurada). Usaremos a segunda maneira.
 
 ```python
 def setup():
@@ -38,11 +40,11 @@ def bandeirinha(px, py, tamanho=50):
         vertex(metade, -metade)
         endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
 ```
-A definição da função `setup()` não é obrigatória no Modo Python, mas é a parte inicial da estrutura `setup()`/`draw()` usada na maior parte dos programas que trabalham com interação ou movimento, e é invocada uma única vez no início da execução. Note que neste momento já estará definida a função `bandeirinha()`. 
+A definição da função `setup()` não é obrigatória no Modo Python, mas é a parte inicial da estrutura `setup()`/`draw()` usada na maior parte dos programas que trabalham com interação ou movimento em Processing e é invocada uma única vez no início da execução. Note que neste momento já estará definida a função `bandeirinha()`. 
 
 ###  1. Redesenhando formas e atualizando variáveis no loop principal
 
-Para se obter o efeito de movimento, animação da bandeirinha, criamos um par de variáveis globais `x` e `y`, inicializadas no bloco `setup()` com as coordenadas do meio da àrea de desenho. Note-se que o escopo global dessas variáveis precisa ser indicado com a palavra chave `global`, quando pretendemos alterá-las.
+Para se obter o efeito de movimento (animação da bandeirinha) criamos um par de variáveis globais `x` e `y`, inicializadas no bloco `setup()` com as coordenadas do meio da àrea de desenho. Note que o escopo global dessas variáveis precisa ser indicado com a palavra chave `global` quando pretendemos alterá-las.
 
 O novo bloco `draw()` cujo nome faz parte da infraestrutura do Processing para permitir animações, terá automaticamente a execução repetida continuamente, é o "laço principal" do programa. Neste bloco vamos inicialmente limpar a tela com `background()`invocar a função de desenho `bandeirinha()` na posição indicada pelas variáveis `x` e `y`, incrementar as variáves de posição e por fim checar se estas estão além de um limite limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
 
@@ -64,7 +66,8 @@ def draw():
         x = -25
     if y > height + 25:
         y = -25
-        
+```
+```
 # [...o código continua com a def bandeirinha mostrada anteriormente...] 
 ```
 ### 2. Primeira aproximação da classe Bandeirinha
@@ -213,7 +216,7 @@ class Bandeirinha():
 ### 5. Uma lista de objetos
 
 Uma estrutura de dados, no caso uma lista, pode de maneira muito simples conter referências para um grande número de objetos.
-Aqui chegamos rapidamente num comportamento visualmente interessante instanciando 50 bandeirinhas no `setup()` e no `draw()` iteramos por estas bandeirinhas de maneira bastante típica em Python com um laço `for `*`object`*` in `*`collection_of_objects`*`:` 
+Aqui chegamos rapidamente a um comportamento visualmente interessante instanciando 50 bandeirinhas no `setup()` e em seguida no `draw()` iteramos por estas bandeirinhas de maneira bastante típica em Python com um laço `for `*`object`*` in `*`collection_of_objects`*`:` 
 
 ```python
 bandeirinhas = []  # lista de objetos
@@ -221,7 +224,7 @@ bandeirinhas = []  # lista de objetos
 def setup():
     """ Define área de desenho e popula lista de bandeirinhas """
     size(400, 400)  # área de desenho (width, height)
-    meia_largura, meia_altura = width / 2., height / 2. # floats
+    meia_largura, meia_altura = width / 2, height / 2
     for _ in range(50):
         bandeirinhas.append(Bandeirinha(meia_largura, meia_altura))
 
@@ -248,6 +251,28 @@ def keyPressed():
     """ tecla 'espaço' remove a última bandeirinha da lista """
     if key == ' ' and len(bandeirinhas) > 1:
         removida = bandeirinhas.pop()    
+```
+E o método de desenho da bandeirinha agora sofre a influência da distância do mouse;
+
+```python
+    def desenha(self):
+        """ Desenha polígono em torno das coordenadas do objeto """
+        metade = self.tamanho / 2
+        with pushMatrix():   # preseservando o sistema de coordenadas anterior
+            translate(self.x, self.y)  # translada o sistema de coordenadas
+            noStroke()  # sem contorno
+            # se o mouse estiver longe, normal, senão, branca
+            if dist(mouseX, mouseY, self.x, self.y) > metade:
+                fill(self.cor)
+            else:
+                fill(255,100)
+            beginShape()  # inicia polígono
+            vertex(-metade, -metade)
+            vertex(-metade, metade)
+            vertex(0, 0)
+            vertex(metade, metade)
+            vertex(metade, -metade)
+            endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
 ```
 
 [1] http://cs.lmu.edu/~ray/notes/paradigms/
