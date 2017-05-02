@@ -69,6 +69,12 @@ def draw():
 ```
 ### 2. Primeira aproximação da classe Bandeirinha
 
+Vamos agora obter o mesmo comportamento usando um objeto da classe `Bandeirinha`.
+A classe é definida pelo bloco `class Bandeirinha():` que começa com o método especial `__init__()` que na construção de um novo objeto da classe inicializa os atributos de dados (campos) de posição e tamanho.
+O método `desenha()` é praticamente a função que escrevemos no passo inicial, não requer mais os parâmetros de posição e tamanho, uma vez que usa os atributos de posição e tamanho do próprio objeto (instância) quando executado.
+O método `anda()` contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) de posição objeto.
+No bloco `setup()` criamos uma instância de bandeirinha no meio da àrea de desenho com a linha`bandeira = Bandeirinha(width / 2, height / 2)` e o bloco `draw()` vai repetidamente limpar a tela e chamar os métodos de desenho e atualização, `bandeira.desenha()` e `bandeira.anda()` respectivamente. 
+
 ```python
 def setup():
     """ Código de configuração, executado no início pelo Processing """
@@ -112,11 +118,6 @@ class Bandeirinha():
         if self.y > height + 25:
             self.y = -25
 ```
-Vamos agora obter o mesmo comportamento usando um objeto da classe `Bandeirinha`.
-A classe é definida pelo bloco `class Bandeirinha():` que começa com o método especial `__init__()` que na construção de um novo objeto da classe inicializa seus atributos de dados (campos) de posição e tamanho.
-O método `desenha()` é praticamente a função que escrevemos no passo inicial, não requer mais os parâmetros de posição, uma vez que usa os atributos de posição e tamanho do próprio objeto (instância) quando executado.
-O método `anda()` contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) do objeto.
-No bloco `setup()` criamos uma instância de bandeirinha no meio da àrea de desenho com a linha`bandeira = Bandeirinha(width / 2, height / 2)` e no bloco `draw()` chamamos os métodos de desenho e atualização com `bandeira.desenha()` e `bandeira.anda()` respectivamente. 
 
 ### 3. Instanciando mais alguns objetos
 
@@ -209,6 +210,9 @@ class Bandeirinha():
 
 ### 5. Uma lista de objetos
 
+Uma estrutura de dados, no caso uma lista, pode de maneira muito simples conter referências para um grande número de objetos.
+Aqui chegamos rapidamente num comportamento visualmente interessante instanciando 50 bandeirinhas no `setup()` e no `draw()` iteramos por estas bandeirinhas de maneira bastante típica em Python com um loop `for `*`object`*` in `*`collection_of_objects`*`:` 
+
 ```python
 bandeirinhas = []  # lista de objetos
 
@@ -228,6 +232,8 @@ def draw():
 ```
 
 ### 6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
+
+Como extra exemplo dos métodos `append()` e `pop()` da lista, usados nos *eventos* de clique do mouse ou acionamento da barra de espaço no teclado, acrescentando ou removendo objetos respectivamente.
 
 ```python
 def mousePressed():
