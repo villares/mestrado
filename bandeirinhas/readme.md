@@ -150,14 +150,16 @@ def draw():
 O passo seguinte é dado ampliando o código da classe Bandeirinha.
 
 No método `__init__()`:
-1. Sortear um tamanho, caso nenhum tenha sido fornecido na expressão construtora;
-2. Sortear uma velocidade, com componentes horizontal `self.vx` e vertical `self.vy`;
-3. Sortear uma cor, ligeiramente translúcida.
+1. Sorteio do tamanho, caso nenhum tenha sido fornecido na expressão construtora;
+2. Sorteio da velocidade, decomposta nos componentes horizontal `self.vx` e vertical `self.vy`;
+3. Sorteio da cor, ligeiramente translúcida.
+
 No método `desenha()`^:
-1. `noStroke()`;
-2. `fill(self.cor)`.
+1. Remoção do contorno com `noStroke()`;
+2. Aplicação da cor de preenchimento com `fill(self.cor)`.
+
 No método `anda()`:
-1. Atualização da posição pela soma dos componentes de velocidade;
+1. Atualização da posição pela soma dos componentes de velocidade na posição;
 2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
 
 ```python
@@ -211,7 +213,7 @@ class Bandeirinha():
 ### 5. Uma lista de objetos
 
 Uma estrutura de dados, no caso uma lista, pode de maneira muito simples conter referências para um grande número de objetos.
-Aqui chegamos rapidamente num comportamento visualmente interessante instanciando 50 bandeirinhas no `setup()` e no `draw()` iteramos por estas bandeirinhas de maneira bastante típica em Python com um loop `for `*`object`*` in `*`collection_of_objects`*`:` 
+Aqui chegamos rapidamente num comportamento visualmente interessante instanciando 50 bandeirinhas no `setup()` e no `draw()` iteramos por estas bandeirinhas de maneira bastante típica em Python com um laço `for `*`object`*` in `*`collection_of_objects`*`:` 
 
 ```python
 bandeirinhas = []  # lista de objetos
