@@ -17,7 +17,7 @@ Apresentamos aqui um exemplo de orientação a objetos utilizado em diversas aul
 
 Começamos com a definição de uma função `bandeirinha()` que recebe como parâmetros as coordenadas onde deve ser desenhada (e pode receber um parâmetro de tamanho opcional) produzindo um polígono fechado em forma de bandeirinha.  
 
-No lugar de somar as cordenadas de localização recebidas como parâmetros aos vértices do polígonos usamos a estratégia de translação do sistema de cordenadas, moveremos a origem e em seguida desenharemos o polígono. Antes da translação é interessante preservar o sistema orginal de coordenadas com o comando `pushMatrix()`. Isso pode ser feito simplesmente invocando `pushMatrix()` antes da translação e `popMatrix()` ao final do desenho (restaurando o sistema de coordenadas original), ou com a linha  `with pushMatrix():` seguida de um bloco indentado de código que executa a translação e o desenho (ao final do bloco, encerra-se o contexto e a origem é restaurada), e é o que faremos.
+No lugar de somar as cordenadas de localização recebidas como parâmetros aos vértices do polígonos usamos a estratégia de translação do sistema de cordenadas, moveremos a origem e em seguida desenharemos o polígono. Antes da translação é interessante preservar o sistema orginal de coordenadas com o comando `pushMatrix()`. Isso pode ser feito simplesmente invocando `pushMatrix()` antes da translação e `popMatrix()` ao final do desenho (restaurando o sistema de coordenadas original), ou com a linha `with pushMatrix():` seguida de um bloco indentado de código que executa a translação e o desenho (ao final do bloco, encerra-se o contexto e a origem é restaurada), e é o que faremos.
 
 ```python
 def setup():
@@ -44,7 +44,7 @@ A definição da função `setup()` não é obrigatória no Modo Python, mas é 
 
 Para se obter o efeito de movimento, animação da bandeirinha, criamos um par de variáveis globais `x` e `y`, inicializadas no bloco `setup()` com as coordenadas do meio da àrea de desenho. Note-se que o escopo global dessas variáveis precisa ser indicado com a palavra chave `global`, quando pretendemos alterá-las.
 
-O novo bloco `draw()` cujo nome faz parte da infraestrutura de processing para permitir animações, terá automaticamente a execução repetida continuamente, é o que chamamos de laço principal do programa. Neste laço vamos inicialmente limpar a tela com `background()`invocar a função de desenho `bandeirinha()` na posição indicada pelas variáveis `x` e `y`, incrementar as variáves de posição e por fim checar se estas estão além de um limite limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
+O novo bloco `draw()` cujo nome faz parte da infraestrutura do Processing para permitir animações, terá automaticamente a execução repetida continuamente, é o "laço principal" do programa. Neste bloco vamos inicialmente limpar a tela com `background()`invocar a função de desenho `bandeirinha()` na posição indicada pelas variáveis `x` e `y`, incrementar as variáves de posição e por fim checar se estas estão além de um limite limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
 
 ```python
 def setup():
@@ -65,7 +65,7 @@ def draw():
     if y > height + 25:
         y = -25
         
-# [...continua com a def bandeirinha mostrada anteriormente...] 
+# [...o código continua com a def bandeirinha mostrada anteriormente...] 
 ```
 ### 2. Primeira aproximação da classe Bandeirinha
 
@@ -120,10 +120,126 @@ No bloco `setup()` criamos uma instância de bandeirinha no meio da àrea de des
 
 ### 3. Instanciando mais alguns objetos
 
+A vantagem da estruturação e encapsulamento de termos um objeto bandeira criado por uma classe Bandeirinha pode começar a ser visto quando instanciamos mais de uma bandeirinha.
+
+```python
+def setup():
+    """ Instancia três bandeirinhas """
+    global bandeira_a, bandeira_b, bandeira_c
+    size(100, 100)  # área de desenho (width, height)
+    meia_largura, meia_altura = width / 2, height / 2
+    bandeira_a = Bandeirinha(10, 40, 20)
+    bandeira_b = Bandeirinha(meia_largura, meia_altura)
+    bandeira_c = Bandeirinha(80, 10, 30)
+
+def draw():
+    """ Limpa a tela, desenha e atualiza bandeirinhas """
+    background(0)  # atualização do desenho, fundo preto
+    bandeira_a.desenha()
+    bandeira_a.anda()
+    bandeira_b.desenha()
+    bandeira_b.anda()
+    bandeira_c.desenha()
+    bandeira_c.anda()
+    
+# [...o código continua com a classe Bandeirinha mostrada anteriormente...]     
+```
 ### 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
+
+O passo seguinte é dado ampliando o código da classe Bandeirinha.
+
+No método `__init__()`:
+1. Sortear um tamanho, caso nenhum tenha sido fornecido na expressão construtora;
+2. Sortear uma velocidade, com componentes horizontal `self.vx` e vertical `self.vy`;
+3. Sortear uma cor, ligeiramente translúcida.
+No método `desenha()`^:
+1. `noStroke()`;
+2. `fill(self.cor)`.
+No método `anda()`:
+1. Atualização da posição pela soma dos componentes de velocidade;
+2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
+
+```python
+class Bandeirinha():
+    """ Classe Bandeirinha, cor sorteada, velocidade sorteada """
+
+    def __init__(self, px, py, ptamanho=None):
+        self.x = float(px)
+        self.y = float(py)
+        if ptamanho:
+            self.tamanho = ptamanho
+        else:
+            self.tamanho = random(50, 200)
+        self.vx = random(-1,1)
+        self.vy = random(-1,1)
+        self.cor = color(random(255),  # R
+                         random(255),  # G
+                         random(255),  # B
+                         200)  # alpha
+
+    def desenha(self):
+        """ Desenha polígono em torno das coordenadas do objeto """
+        metade = self.tamanho / 2
+        with pushMatrix():   # preseservando o sistema de coordenadas anterior
+            translate(self.x, self.y)  # translada o sistema de coordenadas
+            noStroke()  # sem contorno
+            fill(self.cor)
+            beginShape()  # inicia polígono
+            vertex(-metade, -metade)
+            vertex(-metade, metade)
+            vertex(0, 0)
+            vertex(metade, metade)
+            vertex(metade, -metade)
+            endShape(CLOSE)  # encerra polígono, fechando no primeiro vértice
+
+    def anda(self):
+        """ atualiza a posição do objeto e devolve do lado oposto se sair """
+        self.x += self.vx
+        self.y += self.vy
+        metade = self.tamanho / 2
+        if self.x > width + metade:
+            self.x = -metade
+        if self.y > height + metade:
+            self.y = -metade
+        if self.x < -metade:
+            self.x = width + metade
+        if self.y < -metade:
+            self.y = height + metade
+```
 
 ### 5. Uma lista de objetos
 
+```python
+bandeirinhas = []  # lista de objetos
+
+def setup():
+    """ Define área de desenho e popula lista de bandeirinhas """
+    size(400, 400)  # área de desenho (width, height)
+    meia_largura, meia_altura = width / 2., height / 2. # floats
+    for _ in range(50):
+        bandeirinhas.append(Bandeirinha(meia_largura, meia_altura))
+
+def draw():
+    """ Limpa a tela, desenha e atualiza bandeirinhas """
+    background(0)  # atualização do desenho, fundo preto
+    for bandeira in bandeirinhas:
+        bandeira.desenha()
+        bandeira.anda()
+```
+
 ### 6. Acrescentando e removendo objetos; Mudança da cor com o mouse próximo.
+
+```python
+def mousePressed():
+    """ Acrescenta pequena bandeirinha branca """
+    nova_bandeirinha = Bandeirinha(mouseX, mouseY, 25)
+    nova_bandeirinha.cor = color(255)  # forçando que seja branca!
+    bandeirinhas.append(nova_bandeirinha)
+    
+def keyPressed():  
+    """ tecla 'espaço' remove a última bandeirinha da lista """
+    if key == ' ' and len(bandeirinhas) > 1:
+        removida = bandeirinhas.pop()    
+```
 
 [1] http://cs.lmu.edu/~ray/notes/paradigms/
