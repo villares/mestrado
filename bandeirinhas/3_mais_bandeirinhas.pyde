@@ -8,9 +8,9 @@ def setup():
     global bandeira_a, bandeira_b, bandeira_c
     size(100, 100)  # área de desenho (width, height)
     meia_largura, meia_altura = width / 2, height / 2
+    bandeira_a = Bandeirinha(meia_largura, meia_altura)
+    bandeira_b = Bandeirinha(80, 10, 30)
     bandeira_a = Bandeirinha(10, 40, 20)
-    bandeira_b = Bandeirinha(meia_largura, meia_altura)
-    bandeira_c = Bandeirinha(80, 10, 30)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
