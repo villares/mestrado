@@ -1,6 +1,6 @@
 # Orientação a objetos<br> com bandeirinhas
 
-![output passo quatro](s4.gif)
+<img src="s4.gif" align="left"  alt="output passo 4">
 
 ## Um exemplo em 7 passos
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
@@ -18,6 +18,8 @@ Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  c
 * Controle do sistema de coordenadas `pushMatrix`, `translate`, `rotate`, `scale`, `popMatrix`.
 
 ### 0. Definindo funções e deslocando o sistema de cordenadas
+
+<img src="imagens/passo0.png" align="left" alt="output passo 0">
 
 Começamos com a definição de uma função `bandeirinha()` que recebe como parâmetros as coordenadas onde deve ser desenhada (e pode receber um parâmetro de tamanho opcional) produzindo um polígono fechado em forma de bandeirinha.  
 
