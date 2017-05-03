@@ -176,6 +176,8 @@ No método `anda()`:
 1. Atualização da posição pela soma dos componentes de velocidade na posição;
 2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
 
+<img src="imagens/passo4.png" align="left" alt="alguns outputs do passo 4">
+
 ```python
 class Bandeirinha():
     """ Classe Bandeirinha, cor sorteada, velocidade sorteada """
