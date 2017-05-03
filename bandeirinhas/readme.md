@@ -49,6 +49,8 @@ A definição da função `setup()` não é obrigatória no Modo Python, mas é 
 
 ###  1. Redesenhando formas e atualizando variáveis no loop principal
 
+<img src="imagens/passo1.png" align="left" alt="output passo 1">
+
 Para se obter o efeito de movimento (animação da bandeirinha) criamos um par de variáveis globais `x` e `y`, inicializadas no bloco `setup()` com as coordenadas do meio da àrea de desenho. Note que o escopo global dessas variáveis precisa ser indicado com a palavra chave `global` quando pretendemos alterá-las.
 
 O novo bloco `draw()` cujo nome faz parte da infraestrutura do Processing para permitir animações, terá automaticamente a execução repetida continuamente, é o "laço principal" do *sketch*. Neste bloco vamos inicialmente limpar a tela com `background()`invocar a função de desenho `bandeirinha()` na posição indicada pelas variáveis `x` e `y`, incrementar as variáves de posição e por fim checar se estas estão além de um certo limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
@@ -128,6 +130,8 @@ class Bandeirinha():
 ```
 
 ### 3. Instanciando mais alguns objetos
+
+<img src="imagens/passo3.png" align="left" alt="output passo 3">
 
 A vantagem da estruturação e encapsulamento de termos um objeto bandeira criado por uma classe Bandeirinha pode começar a ser visto quando instanciamos mais de uma bandeirinha.
 
