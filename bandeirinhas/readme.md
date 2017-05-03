@@ -1,6 +1,6 @@
 # Orientação a objetos<br> com bandeirinhas
 
-<img src="s4.gif" align="left"  alt="output passo 4">
+<img src="s4.gif" align="right"  alt="output passo 4">
 
 ## Um exemplo em 7 passos
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
