@@ -18,15 +18,10 @@ void setup() {
 void draw() {
   /* Limpa a tela, desenha e atualiza bandeirinhas */
   background(0);  // atualização do desenho, fundo preto
-  //fill(0, 2);
-  //rect(0, 0, width, height);
   for (Bandeirinha bandeira : bandeirinhas) {
     bandeira.desenha();
     bandeira.anda();
   }
-  // para salvar frames 
-  //f = frameCount            
-  //if  (f < 1000 && (f % 10 != 0)) saveFrame("../s4_####.png");
 }
 
 void mousePressed() {
@@ -48,9 +43,6 @@ class Bandeirinha {
   /* Classe Bandeirinha, cor sorteada, tamanho sorteado por voidault */
   float x, y, vx, vy, tamanho;
   color cor;
-  //Bandeirinha(float px, float py){
-
-  //}
   Bandeirinha(float px, float py, float ptamanho) {
     x = px;
     y = py;
