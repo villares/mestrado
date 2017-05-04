@@ -88,15 +88,15 @@ No bloco `setup()` criamos uma instância de bandeirinha no meio da àrea de des
 ```python
 def setup():
     """ Código de configuração, executado no início pelo Processing """
-    global bandeira
+    global bandeira_0
     size(100, 100)  # área de desenho
-    bandeira = Bandeirinha(width / 2, height / 2)
+    bandeira_0 = Bandeirinha(width / 2, height / 2)
 
 def draw():
     """ Laço principal de repetição do Processing """
     background(0)  # atualização do desenho, fundo preto
-    bandeira.desenha()
-    bandeira.anda()
+    bandeira_0.desenha()
+    bandeira_0.anda()
 
 class Bandeirinha():
     """ Classe Bandeirinha, com métodos de desenho e atualizaçao ('anda') """
@@ -138,28 +138,30 @@ A vantagem da estruturação e encapsulamento de termos um objeto bandeira criad
 ```python
 def setup():
     """ Instancia três bandeirinhas """
-    global bandeira_a, bandeira_b, bandeira_c
+    global bandeira_0, baindeira_1, bandeira_2
     size(100, 100)  # área de desenho (width, height)
     meia_largura, meia_altura = width / 2, height / 2
-    bandeira_a = Bandeirinha(10, 40, 20)
-    bandeira_b = Bandeirinha(meia_largura, meia_altura)
-    bandeira_c = Bandeirinha(80, 10, 30)
+    bandeira_0 = Bandeirinha(meia_largura, meia_altura)
+    bandeira_1 = Bandeirinha(80, 10, 30)
+    bandeira_2 = Bandeirinha(10, 40, 20)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
     background(0)  # atualização do desenho, fundo preto
-    bandeira_a.desenha()
-    bandeira_a.anda()
-    bandeira_b.desenha()
-    bandeira_b.anda()
-    bandeira_c.desenha()
-    bandeira_c.anda()
+    bandeira_0.desenha()
+    bandeira_0.anda()
+    bandeira_1.desenha()
+    bandeira_1.anda()
+    bandeira_2.desenha()
+    bandeira_2.anda()
     
 ```
 ```
 ...o código continua com a classe Bandeirinha mostrada anteriormente
 ```
 ### 4. Ampliando a classe, mudando o comportamento e adicionando outras propriedades.
+
+<img src="imagens/passo4.png" align="left" alt="alguns outputs do passo 4">
 
 O passo seguinte é dado ampliando o código da classe Bandeirinha.
 
@@ -175,8 +177,6 @@ No método `desenha()`^:
 No método `anda()`:
 1. Atualização da posição pela soma dos componentes de velocidade na posição;
 2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
-
-<img src="imagens/passo4.png" align="left" alt="alguns outputs do passo 4">
 
 ```python
 class Bandeirinha():
