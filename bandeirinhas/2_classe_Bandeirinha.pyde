@@ -5,9 +5,10 @@ anterior de polígono animado por variáveis globais.
 
 def setup():
     """ Código de configuração, executado no início pelo Processing """
-    global bandeira
-    size(100, 100)  # área de desenho
-    bandeira = Bandeirinha(width / 2, height / 2)
+    global bandeira_0
+    size(100, 100)  # área de desenho (width, height)
+    meia_largura, meia_altura = width / 2, height / 2
+    bandeira_0 = Bandeirinha(meia_largura, meia_altura)
 
 def draw():
     """ Laço principal de repetição do Processing """
