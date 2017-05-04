@@ -82,7 +82,7 @@ def draw():
 Vamos agora obter o mesmo comportamento usando um objeto da classe `Bandeirinha`.
 A classe é definida pelo bloco `class Bandeirinha():` que começa com o método especial `__init__()` que na construção de um novo objeto da classe inicializa os atributos de dados (campos) de posição e tamanho.
 O método `desenha()` é praticamente a função que escrevemos no passo inicial, não requer mais os parâmetros de posição e tamanho, uma vez que usa os atributos de posição e tamanho do próprio objeto (instância) quando executado.
-O método `anda()` contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) de posição objeto.
+O método `anda()` contém o código anteriormente usado para atualizar a posição nas variáveis globais, agora atualiza os atributos de dados (campos ou variáveis de instância) de posição do objeto.
 No bloco `setup()` criamos uma instância de bandeirinha no meio da àrea de desenho com a linha`bandeira = Bandeirinha(width / 2, height / 2)` e o bloco `draw()` vai repetidamente limpar a tela e chamar os métodos de desenho e atualização, `bandeira.desenha()` e `bandeira.anda()` respectivamente. 
 
 ```python
