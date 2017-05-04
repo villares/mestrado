@@ -5,22 +5,22 @@ anterior de polígono animado por variáveis globais.
 
 def setup():
     """ Instancia três bandeirinhas """
-    global bandeira_a, bandeira_b, bandeira_c
+    global bandeira_0, bandeira_1, bandeira_2
     size(100, 100)  # área de desenho (width, height)
     meia_largura, meia_altura = width / 2, height / 2
-    bandeira_a = Bandeirinha(meia_largura, meia_altura)
-    bandeira_b = Bandeirinha(80, 10, 30)
-    bandeira_a = Bandeirinha(10, 40, 20)
+    bandeira_0 = Bandeirinha(meia_largura, meia_altura)
+    bandeira_1 = Bandeirinha(80, 10, 30)
+    bandeira_2 = Bandeirinha(10, 40, 20)
 
 def draw():
     """ Limpa a tela, desenha e atualiza bandeirinhas """
     background(0)  # atualização do desenho, fundo preto
-    bandeira_a.desenha()
-    bandeira_a.anda()
-    bandeira_b.desenha()
-    bandeira_b.anda()
-    bandeira_c.desenha()
-    bandeira_c.anda()
+    bandeira_0.desenha()
+    bandeira_0.anda()
+    bandeira_1.desenha()
+    bandeira_1.anda()
+    bandeira_2.desenha()
+    bandeira_2.anda()
 
 class Bandeirinha():
     """ Classe Bandeirinha, com métodos de desenho e atualizaçao ('anda') """
