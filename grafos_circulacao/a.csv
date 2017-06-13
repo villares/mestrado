@@ -1,0 +1,5 @@
+H, Hall, A, C
+A, Auditório, H, C
+C, Corredor, A, S1, S2, H
+S1, Sala1, C
+S2, Sala2, C
