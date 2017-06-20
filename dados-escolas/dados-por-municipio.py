@@ -8,17 +8,17 @@ import urllib.request
 import json
  
 def detalhe(cod):
-  resp = None
-  url = 'http://educacao.dadosabertosbr.com/api/estatisticas?tipoLocal=MUN&codMunicipio='
-  try:
-      resp = urllib.request.urlopen(url+str(cod), timeout=10).read()
-      resp = json.loads(resp.decode('utf-8'))
-  except timeout:
-      with open('erros.txt', 'a') as e:
-          e.write(cod)
-          print("timeout "+ cod)
-  if resp:
-    det =','.join(map(str,(
+    url = 'http://educacao.dadosabertosbr.com/api/estatisticas?tipoLocal=MUN&codMunicipio='
+    try:
+        resp = urllib.request.urlopen(url+str(cod), timeout=10).read()
+        resp = json.loads(resp.decode('utf-8'))
+    except timeout:
+        with open('erros.txt', 'a') as e:
+            e.write(cod)
+        print("timeout "+ cod)
+        resp = None
+    if resp:
+        det =','.join(map(str,(
                     resp['codMunicipio'],
                     resp['computadoresAlunos'],
                     resp['internet'],
@@ -27,8 +27,10 @@ def detalhe(cod):
                     resp['laboratorioInformatica'],
                     resp['ano']
                     )))
-    #print(det)
-    return det
+        #print(det)
+        return det
+    else:
+        return None
  
 with open("municipios-2013.txt") as lista:
     municipios = lista.readlines()
@@ -48,7 +50,4 @@ with open('dados-municipios-2013.csv', 'a') as dados:
             print(m)
  
 print('feito')
- 
- 
- 
 
