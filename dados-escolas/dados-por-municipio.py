@@ -47,7 +47,8 @@ with open('dados-municipios-2013.csv', 'a') as dados:
         m = m.strip()
         if m:
             linha = detalhe(m)
-            if linha: dados.write(linha + '\n')
-            print(m + " OK")
+            if linha: 
+                dados.write(linha + '\n')
+                print(m + " OK")
  
 print('feito')
