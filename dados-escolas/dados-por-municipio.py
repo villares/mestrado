@@ -15,7 +15,7 @@ def detalhe(cod):
     except timeout:
         with open('erros.txt', 'a') as e:
             e.write(cod)
-        print("timeout "+ cod)
+        print(cod + " Timeout")
         resp = None
     if resp:
         det =','.join(map(str,(
@@ -32,8 +32,8 @@ def detalhe(cod):
     else:
         return None
  
-with open("municipios-2013.txt") as lista:
-    municipios = lista.readlines()
+with open("municipios-2013.txt") as arquivo:
+    municipios = arquivo.readlines()
  
 with open('dados-municipios-2013.csv', 'a') as dados:
     dados.write('codMunicipio,'+
@@ -44,10 +44,10 @@ with open('dados-municipios-2013.csv', 'a') as dados:
                 'laboratorioInformatica,'+
                 'ano'+'\n')
     for m in municipios:
+        m = m.strip()
         if m:
             linha = detalhe(m)
             if linha: dados.write(linha + '\n')
-            print(m)
+            print(m + " OK")
  
 print('feito')
-
