@@ -4,7 +4,7 @@
 
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
 
-Bandeirinhas são um tema recorrente da cultura visual brasileira, visível não só nas Festas Juninas como explorado largamete por artistas visuais como Alfredo Volpi. Foram escolhidas para gerar reconhecimento e interesse visual nas imagens e animações produzidas.
+Bandeirinhas são um tema recorrente da cultura visual brasileira, visível não só nas Festas Juninas como explorado largamente por artistas visuais como Alfredo Volpi. Foram escolhidas para gerar reconhecimento e interesse visual nas imagens e animações produzidas.
 
 Numa aula que se desenvolve normalmente em cerca de 7 etapas, são introduzidos conceitos de orientação a objetos: Classe, atributos de dados e métodos, instâncias e encapsulamento. Não são abordadadas ainda questões de herança e composição.
 Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  com programação [procedural/imperativa](http://cs.lmu.edu/~ray/notes/paradigms/)
@@ -16,15 +16,15 @@ Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  c
 * Declaração de funções com e sem parâmetros;
 * Controle do sistema de coordenadas `pushMatrix`, `translate`, `rotate`, `scale`, `popMatrix`.
 
-### 0. Definindo funções e deslocando o sistema de cordenadas
+### 0. Definindo funções e deslocando o sistema de coordenadas
 
 <img src="imagens/passo0.png" align="left" alt="output passo 0">
 
 Começamos com a definição de uma função `bandeirinha()` que recebe como parâmetros as coordenadas onde deve ser desenhada (e pode receber um parâmetro de tamanho opcional) produzindo um polígono fechado em forma de bandeirinha.  
 
-No lugar de somar as cordenadas de localização recebidas como parâmetros aos vértices do polígonos usamos a estratégia de translação do sistema de cordenadas, moveremos a origem e em seguida desenharemos o polígono.
+No lugar de somar as coordenadas de localização recebidas como parâmetros aos vértices dos polígonos usamos a estratégia de translação do sistema de cordenadas, moveremos a origem e em seguida desenharemos o polígono.
 
-Antes da translação é necessário preservar o sistema orginal de coordenadas com o comando `pushMatrix()`. Isso pode ser feito simplesmente invocando `pushMatrix()` antes da translação e `popMatrix()` ao final do desenho, ou com a linha `with pushMatrix():` seguida de um bloco indentado de código que executa a translação e o desenho (ao final do bloco, encerra-se o contexto e a origem é restaurada). Usaremos a segunda maneira.
+Antes da translação é necessário preservar o sistema original de coordenadas com o comando `pushMatrix()`. Isso pode ser feito simplesmente invocando `pushMatrix()` antes da translação e `popMatrix()` ao final do desenho, ou com a linha `with pushMatrix():` seguida de um bloco indentado de código que executa a translação e o desenho (ao final do bloco, encerra-se o contexto e a origem é restaurada). Usaremos a segunda maneira.
 
 ```python
 def setup():
@@ -53,7 +53,7 @@ A definição da função `setup()` não é obrigatória no Modo Python, mas é 
 
 Para se obter o efeito de movimento (animação da bandeirinha) criamos um par de variáveis globais `x` e `y`, inicializadas no `setup()` com as coordenadas do meio da àrea de desenho. Note que o escopo global dessas variáveis precisa ser indicado com a palavra chave `global` quando pretendemos alterá-las.
 
-O novo `draw()` cujo nome faz parte da infraestrutura do Processing para permitir animações, terá automaticamente a execução repetida continuamente, é o "laço principal" do *sketch*. Neste bloco vamos inicialmente limpar a tela com `background()`invocar a função de desenho `bandeirinha()` na posição indicada pelas variáveis `x` e `y`, incrementar as variáves de posição e por fim checar se estas estão além de um certo limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
+O novo `draw()` cujo nome faz parte da infraestrutura do Processing para permitir animações, terá automaticamente a execução repetida continuamente, é o "laço principal" do *sketch*. Neste bloco vamos inicialmente limpar a tela com `background()`invocar a função de desenho `bandeirinha()` na posição indicada pelas variáveis `x` e `y`, incrementar as variáveis de posição e por fim checar se estas estão além de um certo limite e precisam ser alteradas (redefinindo a posição para um novo ciclo de incrementos).
 
 ```python
 def setup():
