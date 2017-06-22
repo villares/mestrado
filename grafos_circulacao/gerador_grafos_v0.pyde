@@ -1,7 +1,7 @@
 """ 
 Para executar, instale Processing Modo Python
 http://villares.github.io/como-instalar-o-processing-modo-python/
-crie um arquivo a.csv na pasta deste sketch, contando uma lista de ambientes
+crie um arquivo a.txt na pasta deste sketch, contando uma lista de ambientes
 """
 
 import csv
