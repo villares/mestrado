@@ -1,0 +1,9 @@
+
+Cod., Ambiente,   A1, A2, A3, A4, A5, A6, A7
+A1,   Hall,       0,  1,  0,  0,  1,  0,  0
+A2,   Auditório,  1,  0,  0,  0,  0,  0,  0
+A3,   Corredor,   1,  1,  0,  1,  1,  0,  0
+A4,   Sala1,      0,  1,  0,  0,  0,  0,  0
+A5,   Sala2,      0,  1,  0,  0,  0,  0,  0
+A6,   Entrada,    1,  0,  0,  0,  0,  0,  0
+A7,   Sanitários, 0,  1,  0,  0,  0,  0,  0
