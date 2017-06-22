@@ -7,7 +7,7 @@ crie um arquivo a.csv na pasta deste sketch, contando uma lista de ambientes
 import csv
 import random as rnd  # para não conflitar com o random do Processing
 
-with open("a.csv") as f:
+with open("a.txt") as f:
     ambientes = list(csv.reader(f))
 print ambientes
 
