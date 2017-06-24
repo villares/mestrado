@@ -10,9 +10,9 @@ import json
 def detalhe(cod):
     url = 'http://educacao.dadosabertosbr.com/api/estatisticas?tipoLocal=MUN&codMunicipio='
     try:
-        resp = urllib.request.urlopen(url+str(cod), timeout=10).read()
+        resp = urllib.request.urlopen(url+str(cod), timeout=1).read()
         resp = json.loads(resp.decode('utf-8'))
-    except timeout:
+    except:
         with open('erros.txt', 'a') as e:
             e.write(cod)
         print(cod + " Timeout")
@@ -24,9 +24,11 @@ def detalhe(cod):
                     resp['internet'],
                     resp['bandaLarga'],
                     resp['datashows'],
+                    resp['televisores'],
                     resp['laboratorioInformatica'],
+                    resp['salasUtilizadas'],
                     resp['ano']
-                    )))
+                         )))
         #print(det)
         return det
     else:
@@ -38,17 +40,18 @@ with open("municipios-2013.txt") as arquivo:
 with open('dados-municipios-2013.csv', 'a') as dados:
     dados.write('codMunicipio,'+
                 'computadoresAlunos,'+
-                'interner,'+
+                'internet,'+
                 'bandaLarga,'+
-                'datashows,'+
+                'datashows, televisores'+
                 'laboratorioInformatica,'+
+                'salasUtilizadas,'+
                 'ano'+'\n')
+
     for m in municipios:
         m = m.strip()
         if m:
             linha = detalhe(m)
-            if linha: 
-                dados.write(linha + '\n')
-                print(m + " OK")
+            if linha: dados.write(linha + '\n')
+            print(m + " OK")
  
-print('feito')
+print('feito, verifique o arquivo erros.txt para as localidades que faltaram')
