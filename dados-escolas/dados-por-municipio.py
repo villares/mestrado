@@ -14,7 +14,7 @@ def detalhe(cod):
         resp = json.loads(resp.decode('utf-8'))
     except:
         with open('erros.txt', 'a') as e:
-            e.write(cod)
+            e.write(cod + '\n')
         print(cod + " Timeout")
         resp = None
     if resp:
