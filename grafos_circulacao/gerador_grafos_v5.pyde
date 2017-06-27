@@ -176,3 +176,4 @@ class Aresta():
                 aresta.p1==p2 and aresta.p2==p1): 
                 return True
         return False
+    
