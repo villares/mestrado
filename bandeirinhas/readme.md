@@ -2,6 +2,10 @@
 ## Um exemplo em 7 passos
 <img src="s4.gif" align="right"  alt="output passo 4">
 
+O material abaixo serviu de base para o artigo:
+
+> VILLARES, A. B. A.; MOREIRA, D. DE C.; GOMES, M. R. Ensino de programação em um contexto de exploração gráfica com Processing modo Python. GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
+
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
 
 Bandeirinhas são um tema recorrente da cultura visual brasileira, visível não só nas Festas Juninas como explorado largamente por artistas visuais como Alfredo Volpi. Foram escolhidas para gerar reconhecimento e interesse visual nas imagens e animações produzidas.
