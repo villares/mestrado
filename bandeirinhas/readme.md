@@ -4,7 +4,7 @@
 
 O material abaixo serviu de base para o artigo:
 
-> VILLARES, A. B. A.; MOREIRA, D. DE C.; GOMES, M. R. Ensino de programação em um contexto de exploração gráfica com Processing modo Python. GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
+> VILLARES, A. B. A.; MOREIRA, D. DE C.; GOMES, M. R. [Ensino de programação em um contexto de exploração gráfica com Processing modo Python](http://villares.github.io/VILLARES_MOREIRA_GOMES_GRAPHICA_2017). GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
 
 *Para executar [instale o Processing com o modo Python](http://villares.github.io/como-instalar-o-processing-modo-python/)*
 
