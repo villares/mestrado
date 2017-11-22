@@ -1,12 +1,11 @@
 ----
 
 ## mestrado
-###  temas e aplicações para o ensino de programação num contexto visual
-### *themes and applications for teaching programming in a visual context*
-
+####  temas e aplicações para o ensino de programação num contexto visual
+#### *themes and applications for teaching programming in a visual context*
 Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Unicamp
 
-#### Ensino de programação em um contexto de exploração gráfica com Processing modo Python
+### Ensino de programação em um contexto de exploração gráfica com Processing modo Python
 
 VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. [Ensino de programação em um contexto de exploração gráfica com Processing modo Python](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
 
@@ -14,11 +13,11 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. [Ensino de programação em 
 
  * [versão em inglês da aula](https://medium.com/@villares/object-orientation-with-bandeirinhas-part-1-7-7765ab596d95)
 
-#### *Python on the Landscape of Programming Tools for Design and Architectural Education*
+### *Python on the Landscape of Programming Tools for Design and Architectural Education*
 
 VILLARES, A. B. A.; MOREIRA, D. DE C. [Python on the Landscape of Programming Tools for Design and Architectural Education](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)[to be] Presented at the SIGRADI 2017, Concepcíon, Chile.
 
-#### Gerador de Grafos
+### Gerador de Grafos
 
  * [experimentos para um gerador de grafos de circulação à partir de uma tabela anotada](grafos_circulacao)
 
