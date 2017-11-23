@@ -15,6 +15,6 @@ Currently most professional modeling and computer graphics software packages emb
 
 ----
 
-VILLARES, A. B. A.; MORREIRA, D. de C. **Python on the Landscape of Programming Tools for Design and Architectural Education**. [to be] Presented at the SIGRADI 2017, Concepcíon, Chile. 1017.
+VILLARES, A. B. A.; MORREIRA, D. de C. **Python on the Landscape of Programming Tools for Design and Architectural Education**. Presented at the SIGRADI 2017, Concepcíon, Chile. 1017.
 
 ----
