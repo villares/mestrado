@@ -9,9 +9,9 @@ Currently most professional modeling and computer graphics software packages emb
 
 **Keywords:** Education; Design; Architecture; Programming; Python.
 
-## Raw data
+ * [full text](https://www.proceedings.blucher.com.br/article-details/python-on-the-landscape-of-programming-tools-for-design-and-architectural-education-27628)
 
-[https://github.com/villares/Resources-for-teaching-programming](https://github.com/villares/Resources-for-teaching-programming)
+ * [raw data](https://github.com/villares/Resources-for-teaching-programming)
 
 ----
 
