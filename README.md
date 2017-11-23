@@ -9,7 +9,7 @@ Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Uni
 
 VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. [Ensino de programação em um contexto de exploração gráfica com Processing modo Python](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
 
- * [código e descrito mais informal da aula de orientação a objetos com bandeirinhas descrita no artigo](/bandeirinhas/)
+ * [código e descriçãp informal da aula de orientação a objetos descrita no artigo](/bandeirinhas/)
 
  * [versão em inglês da aula](https://medium.com/@villares/object-orientation-with-bandeirinhas-part-1-7-7765ab596d95)
 
