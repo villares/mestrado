@@ -17,6 +17,8 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. [Ensino de programação em 
 
 VILLARES, A. B. A.; MOREIRA, D. DE C. [Python on the Landscape of Programming Tools for Design and Architectural Education](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)[to be] Presented at the SIGRADI 2017, Concepcíon, Chile.
 
+ * [full text](https://www.proceedings.blucher.com.br/article-details/python-on-the-landscape-of-programming-tools-for-design-and-architectural-education-27628)
+
 ### Gerador de Grafos
 
  * [experimentos para um gerador de grafos de circulação à partir de uma tabela anotada](grafos_circulacao)
