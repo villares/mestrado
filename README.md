@@ -19,7 +19,7 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em
 
 VILLARES, A. B. A.; MOREIRA, D. DE C. **Python on the Landscape of Programming Tools for Design and Architectural Education** Presented at the SIGRADI 2017, Concepcíon, Chile.
 
-* [abstract / full text & raw data links](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)
+* [abstract / resumo / full text & raw data links](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)
 
 ### Gerador de Grafos
 
