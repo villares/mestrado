@@ -7,7 +7,9 @@ Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Uni
 
 ### Ensino de programação em um contexto de exploração gráfica com Processing modo Python
 
-VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. [Ensino de programação em um contexto de exploração gráfica com Processing modo Python](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
+VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em um contexto de exploração gráfica com Processing modo Python** GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
+
+ * [abstract / resumo](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) 
 
  * [código e descriçãp informal da aula de orientação a objetos descrita no artigo](/bandeirinhas/)
 
@@ -15,9 +17,9 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. [Ensino de programação em 
 
 ### *Python on the Landscape of Programming Tools for Design and Architectural Education*
 
-VILLARES, A. B. A.; MOREIRA, D. DE C. [Python on the Landscape of Programming Tools for Design and Architectural Education](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)[to be] Presented at the SIGRADI 2017, Concepcíon, Chile.
+VILLARES, A. B. A.; MOREIRA, D. DE C. **Python on the Landscape of Programming Tools for Design and Architectural Education** Presented at the SIGRADI 2017, Concepcíon, Chile.
 
- * [full text](https://www.proceedings.blucher.com.br/article-details/python-on-the-landscape-of-programming-tools-for-design-and-architectural-education-27628)
+* [abstract / full text & raw data links](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)
 
 ### Gerador de Grafos
 
