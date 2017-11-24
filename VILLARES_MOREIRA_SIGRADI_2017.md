@@ -15,7 +15,7 @@ Atualmente a maioria dos softwares profissionais de computação gráfica e mode
 
  * [full text](https://www.proceedings.blucher.com.br/article-details/python-on-the-landscape-of-programming-tools-for-design-and-architectural-education-27628)
 
- * [raw data](https://github.com/villares/Resources-for-teaching-programming)
+ * [raw data](https://villares.github.io/Resources-for-teaching-programming/)
 
 ----
 
