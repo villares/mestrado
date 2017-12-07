@@ -4,7 +4,7 @@
 
 Alexandre B. A. Villares; Daniel de Carvalho Moreira; Monica Rizzolli Gomes.
 
-* [texto completo] https://www.even3.com.br/Anais/graphica2017/49701-ENSINO-DE-PROGRAMACAO-EM-UM-CONTEXTO-DE-EXPLORACAO-GRAFICA-COM-PROCESSING-MODO-PYTHON
+* [texto completo](https://www.even3.com.br/Anais/graphica2017/49701-ENSINO-DE-PROGRAMACAO-EM-UM-CONTEXTO-DE-EXPLORACAO-GRAFICA-COM-PROCESSING-MODO-PYTHON)
 
 ## Abstract
 
