@@ -9,7 +9,7 @@ Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Uni
 
 VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em um contexto de exploração gráfica com Processing modo Python** GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
 
- * [abstract / resumo](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) 
+ * [abstract / resumo / link para o texto completo](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) 
 
  * [código e descriçãp informal da aula de orientação a objetos descrita no artigo](/bandeirinhas/)
 
