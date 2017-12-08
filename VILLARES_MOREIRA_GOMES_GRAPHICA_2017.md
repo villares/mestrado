@@ -6,7 +6,7 @@ Alexandre B. A. Villares; Daniel de Carvalho Moreira; Monica Rizzolli Gomes.
 
 * [texto completo](https://www.even3.com.br/Anais/graphica2017/49701-ENSINO-DE-PROGRAMACAO-EM-UM-CONTEXTO-DE-EXPLORACAO-GRAFICA-COM-PROCESSING-MODO-PYTHON)
 
-* [código](https://github.com/villares/mestrado/tree/master/bandeirinhas)
+* [código e material de apoio da aula](https://github.com/villares/mestrado/tree/master/bandeirinhas)
 
 * [English-language activity write up [in progress]](https://medium.com/@villares/object-orientation-with-bandeirinhas-part-1-7-7765ab596d95)
 
