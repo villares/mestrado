@@ -1,9 +1,9 @@
 ----
 
 ## mestrado
-####  temas e aplicações para o ensino de programação num contexto visual
-#### *themes and applications for teaching programming in a visual context*
-Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Unicamp
+####  temas e aplicações para o ensino de programação num contexto visual / *themes and applications for teaching programming in a visual context*
+
+> Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Unicamp
 
 * Revisão da literatura introdutória de ensino de programação para artistas, designers e arquitetos
 
