@@ -7,9 +7,9 @@
 
 * Revisão da literatura introdutória de ensino de programação para artistas, designers e arquitetos
 
-* Proposição de um sistema der organização de exemplos didáticos de programação (código + metadados)
+* Proposição de um sistema de organização para exemplos didáticos de programação (código + metadados)
 
-* Protótipo de uma ferramenta/repositório de exeplos organizados
+* Protótipo de ferramenta/repositório de exemplos organizados
 
 
 ----
