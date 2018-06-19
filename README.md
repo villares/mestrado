@@ -1,9 +1,18 @@
 ----
 
 ## mestrado
-####  temas e aplicações para o ensino de programação num contexto visual
-#### *themes and applications for teaching programming in a visual context*
-Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Unicamp
+####  temas e aplicações para o ensino de programação num contexto visual / *themes and applications for teaching programming in a visual context*
+
+> Documentação e material em desenvolvimento no mestrado do programa ATC FEC/Unicamp
+
+* Revisão da literatura introdutória de ensino de programação para artistas, designers e arquitetos
+
+* Proposição de um sistema de organização para exemplos didáticos de programação (código + metadados)
+
+* Protótipo de ferramenta/repositório de exemplos organizados
+
+
+----
 
 ### Ensino de programação em um contexto de exploração gráfica com Processing modo Python
 
@@ -11,7 +20,7 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em
 
  * [abstract / resumo / link para o texto completo](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) 
 
- * [código e descriçãp informal da aula de orientação a objetos descrita no artigo](/bandeirinhas/)
+ * [código e descrição informal da aula de orientação a objetos descrita no artigo](/bandeirinhas/)
 
  * [versão em inglês da aula](https://medium.com/@villares/object-orientation-with-bandeirinhas-part-1-7-7765ab596d95)
 

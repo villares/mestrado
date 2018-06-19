@@ -16,7 +16,7 @@ Para poder aproveitar o exemplo os alunos tiveram contato em aulas anteriores  c
 * Declaração de variáveis e noções de tipagem;
 * Métodos de desenho `rect`, `line`, `ellipse`, `beginShape`, `vertex` e `endShape`;
 * Controle de atributos gráficos `fill`, `stroke`, `noStroke`, `noFill`, `background`;
-* Controle de fluxo de execução e laços `if`, `else`, `for`;
+* Controle de fluxo de execução e laços (`if`, `else` e `for`);
 * Declaração de funções com e sem parâmetros;
 * Controle do sistema de coordenadas `pushMatrix`, `translate`, `rotate`, `scale`, `popMatrix`.
 
@@ -174,13 +174,13 @@ No método `__init__()`:
 2. Sorteio da velocidade, decomposta nos componentes horizontal `self.vx` e vertical `self.vy`;
 3. Sorteio da cor, ligeiramente translúcida.
 
-No método `desenha()`^:
+No método `desenha()`:
 1. Remoção do contorno com `noStroke()`;
 2. Aplicação da cor de preenchimento com `fill(self.cor)`.
 
 No método `anda()`:
 1. Atualização da posição pela soma dos componentes de velocidade na posição;
-2. Tratamento da saída do objeto da àrea de desenho por qualquer dos lados.
+2. Tratamento da saída do objeto da área de desenho por qualquer dos lados.
 
 ```python
 class Bandeirinha():
@@ -195,9 +195,9 @@ class Bandeirinha():
             self.tamanho = random(50, 200)
         self.vx = random(-1,1)
         self.vy = random(-1,1)
-        self.cor = color(random(255),  # R
-                         random(255),  # G
-                         random(255),  # B
+        self.cor = color(random(256),  # R
+                         random(256),  # G
+                         random(256),  # B
                          200)  # alpha
 
     def desenha(self):
@@ -273,7 +273,7 @@ def keyPressed():
     if key == ' ' and len(bandeirinhas) > 1:
         removida = bandeirinhas.pop()    
 ```
-E o método de `desenha()` da bandeirinha agora sofre a influência da distância do mouse;
+E o método `desenha()` da bandeirinha agora sofre a influência da distância do mouse;
 
 ```python
     def desenha(self):
