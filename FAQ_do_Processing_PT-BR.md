@@ -1,4 +1,6 @@
-##FAQ do Processing
+## FAQ do Processing
+
+> original em Inglês: 
 
 #### O que é o *sketchbook*? o que vocês querem dizer com *sketches*?
 
