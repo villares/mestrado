@@ -1,3 +1,4 @@
+código
 app
 app.com.net
 app.dba
@@ -13,10 +14,7 @@ app.sim.neu
 app.sim.phy
 app.snd
 app.snd.out
-con
-con.cnd
-con.ite
-con.ite.nes
+app.snd.inp
 csc
 csc.ana
 csc.ana.bon
@@ -66,7 +64,7 @@ out
 out.fil
 pst
 pst.fun
-pst.fun
+pst.fun.def
 pst.fun.par
 pst.fun.prc
 pst.fun.rtn
@@ -76,6 +74,9 @@ pst.oop.her
 pst.oop.met
 pst.rcr
 pst.sml
+pst.cnd
+pst.ite
+pst.ite.nes
 sin
 sin.arg
 sin.cmp
