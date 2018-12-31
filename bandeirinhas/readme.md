@@ -1,6 +1,6 @@
 # Orientação a objetos com bandeirinhas
 ## Um exemplo em 7 passos
-<img src="s4.gif" align="right"  alt="output passo 4">
+<img src="imagens/passo_final.gif" align="right"  alt="output passo 4">
 
 O material abaixo serviu de base para o artigo:
 
