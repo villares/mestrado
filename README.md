@@ -2,7 +2,8 @@
 
 ## mestrado
 
-#### taxonomia de temas para o ensino de programação em contexto visual / *taxonomy of themes for teaching programming in a visual context*
+#### taxonomia de temas para o ensino de programação em contexto visual
+##### *taxonomy of themes for teaching programming in a visual context*
 
 > Defesa em 25/-2/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp
 
