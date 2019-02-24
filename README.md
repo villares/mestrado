@@ -2,10 +2,10 @@
 
 ## mestrado
 
-#### taxonomia de temas para o ensino de programação em contexto visual
-##### *taxonomy of themes for teaching programming in a visual context*
+#### Taxonomia de temas para o ensino de programação em contexto visual
+##### *Taxonomy of themes for teaching programming in a visual context*
 
-> Defesa em 25/-2/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp
+> defesa em 25/-2/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp
 
 ##### resumo
 
@@ -15,7 +15,7 @@ Foi produzido um vocabulário controlado, ferramenta utilizada para assegurar um
 
 O tesauro e a coleção de exemplos classificados estão disponíveis para consulta, podendo futuramente ser ampliados, permitem identificar particularidades e lacunas nos temas atendidos pelos exemplos e servir de base para futuras pesquisas envolvendo material para ensino introdutório de programação em um contexto visual.
 
-**Palavras-chave:** ensino de programação; programação criativa; vocabulário controlado; Processing; Python.
+**palavras-chave:** ensino de programação; programação criativa; vocabulário controlado; Processing; Python.
 
 
 ##### *abstract*
@@ -26,7 +26,7 @@ A controlled vocabulary was produced, a tool to ensure a common language in a co
 
 The thesaurus and the collection of classified examples are available for online consultation, and may be extended in the future, they allow one to identify particularities and gaps in the topics covered by the examples, and can serve as a basis for future research involving introductory teaching material in a visual context.
 
-**Keywords:** introductory programming, creative coding, controlled vocabulary, Processing, Python
+**keywords:** introductory programming, creative coding, controlled vocabulary, Processing, Python
 </i>
 
 ----
