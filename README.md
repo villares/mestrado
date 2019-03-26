@@ -22,6 +22,17 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 ----
 
+#### Tesauro (vocabulário controlado)
+
+* [ensino de programação em contexto visual](http://www.lugaralgum.com/tematres/vocab/index.php)
+
+
+#### Coleção classificada de códigos-exemplo
+
+* [*Processing Python Mode examples*](http://www.lugaralgum.com/omeka-c/collections/show/1)
+
+----
+
 ### artigos e outros materiais
 
 #### Ensino de programação em um contexto de exploração gráfica com Processing modo Python
