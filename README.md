@@ -3,16 +3,16 @@
 ## mestrado
 
 ### Taxonomia de temas para o ensino de programação em contexto visual
-#### *Taxonomy of themes for teaching programming in a visual context*
 
 > defesa em 25/02/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp
 
-##### resumo
+#### resumo
 
 O ensino de programação para artistas visuais, designers e arquitetos apresenta temas e abordagens particulares, especialmente em ambiente visual proporcionado por ferramentas de programação autônomas ou embutidas em programas de desenho e modelagem tridimensional. Partindo de uma análise da literatura do ensino introdutório de programação voltada ao público mencionado, identificando, comparando, decompondo e hierarquizando assuntos, este trabalho busca a caracterização de temas de programação, e exemplos de sua aplicação. Foi produzido um vocabulário controlado, ferramenta utilizada para assegurar uma linguagem comum a uma comunidade na organização, armazenagem e recuperação de documentos, com intuito de auxiliar professores e alunos a encontrar material didático apropriado, por meio da classificação de códigos-fonte que servem de exemplos didáticos. O vocabulário controlado, na forma de um tesauro, foi então aplicado na organização de exemplos didáticos disponíveis para uso com Processing, ferramenta largamente utilizada para a produção de resultados visuais com programação e que, acrescida do complemento Python Mode, permite a escrita e execução de código com sintaxe da linguagem Python. O tesauro e a coleção de exemplos classificados estão disponíveis para consulta, podendo futuramente ser ampliados, permitem identificar particularidades e lacunas nos temas atendidos pelos exemplos e servir de base para futuras pesquisas envolvendo material para ensino introdutório de programação em um contexto visual.
 
 **palavras-chave:** ensino de programação; programação criativa; vocabulário controlado; Processing; Python.
 
+#### *Taxonomy of themes for teaching programming in a visual context*
 
 ##### *abstract*
 
@@ -22,9 +22,10 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 ----
 
-#### Tesauro (vocabulário controlado)
+#### Taxonomia de temas e vocabulário controlado
 
-* [ensino de programação em contexto visual](http://www.lugaralgum.com/tematres/vocab/index.php)
+* Tesauro: [ensino de programação em contexto visual](http://www.lugaralgum.com/tematres/vocab/index.php)
+* Mapa de tópicos: [Coggle](https://coggle.it/diagram/XCqHK58wsD6Q7T4a/t/ensino-de-programa%C3%A7%C3%A3o-em-contexto-visual)
 
 
 #### Coleção classificada de códigos-exemplo
