@@ -6,7 +6,7 @@
 
 > defesa em 25/02/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp
 
-[PDF](https://github.com/villares/mestrado/blob/master/assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
+* [PDF](https://github.com/villares/mestrado/blob/master/assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
 
 #### resumo
 
@@ -36,7 +36,7 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 #### Texto da dissertação
 
-[PDF](https://github.com/villares/mestrado/blob/master/assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
+* [PDF](https://github.com/villares/mestrado/blob/master/assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
 
 ----
 
