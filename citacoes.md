@@ -1,3 +1,9 @@
+----
+
+Alguns trechos que gosto de leituras que fiz para o meu mestrado (alumas entraram na dissertação, outras não).
+
+----
+
 > Há uma diferença fundamental entre ensinar programação para alunos de ciência da computação e para alunos de arte e design. Espera-se que os
 estudantes de ciência da computação se tornem programadores profissionais que poderão programar aplicações de missão crítica no
 futuro. Estudantes de arte e design, por outro lado, são usuários de programação que precisam da programação para criar seus artefatos
@@ -12,10 +18,14 @@ Acesso em: 29 dez. 2018.
 
 ----
 
+> Como matemáticos, cientistas da computação usam linguagens formais para indicar ideias (especificamente computações).
+> Como construtores*, projetam algo, reunindo componentes e avaliando as vantagens e desvantagens entre alternativas.
+> Como cientistas, observam o comportamento de sistemas complexos, formando hipóteses e testando previsões. (DOWNEY, 2015)
+
+* No original ele diz engenheiros, mas eu como arquiteto resolvi entortar a tradução para construtores :)
+
 DOWNEY, Allen B. Think Python: How to Think Like a Computer Scientist. 2nd ed. Sebastopol: O’Reilly, 2015.
 
 ______. Pense em Python: Pense como um cientista da computação. Tradução de Sheila Gomes. São Paulo, Novatec, 2016.
 
-MELLO, Patricia Oakim Bandeira de. Arte e programação na linguagem Processing. 2015. Dissertação (Mestrado em Mídias Digitais) – Pontifícia
-Universidade Católica de São Paulo, São Paulo, 2015. Disponível em: <https://tede2.pucsp.br/handle/handle/18199>. Acesso em: 29 dez. 2018.
 
