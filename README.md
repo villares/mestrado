@@ -8,6 +8,8 @@
 
 * [PDF](https://github.com/villares/mestrado/blob/master/assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
 
+---
+
 #### resumo
 
 O ensino de programação para artistas visuais, designers e arquitetos apresenta temas e abordagens particulares, especialmente em ambiente visual proporcionado por ferramentas de programação autônomas ou embutidas em programas de desenho e modelagem tridimensional. Partindo de uma análise da literatura do ensino introdutório de programação voltada ao público mencionado, identificando, comparando, decompondo e hierarquizando assuntos, este trabalho busca a caracterização de temas de programação, e exemplos de sua aplicação. Foi produzido um vocabulário controlado, ferramenta utilizada para assegurar uma linguagem comum a uma comunidade na organização, armazenagem e recuperação de documentos, com intuito de auxiliar professores e alunos a encontrar material didático apropriado, por meio da classificação de códigos-fonte que servem de exemplos didáticos. O vocabulário controlado, na forma de um tesauro, foi então aplicado na organização de exemplos didáticos disponíveis para uso com Processing, ferramenta largamente utilizada para a produção de resultados visuais com programação e que, acrescida do complemento Python Mode, permite a escrita e execução de código com sintaxe da linguagem Python. O tesauro e a coleção de exemplos classificados estão disponíveis para consulta, podendo futuramente ser ampliados, permitem identificar particularidades e lacunas nos temas atendidos pelos exemplos e servir de base para futuras pesquisas envolvendo material para ensino introdutório de programação em um contexto visual.
