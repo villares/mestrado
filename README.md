@@ -48,9 +48,9 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em um contexto de exploração gráfica com Processing modo Python** GRAPHICA 2017: XII International Conference on Graphics Engineering for Arts and Design. 2017.
 
- * [abstract / resumo / link para o texto completo](https://villares.github.io/mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) 
+ * [abstract / resumo / link para o texto completo](https://abav.lugaralgum.com//mestrado/VILLARES_MOREIRA_GOMES_GRAPHICA_2017) 
 
- * [código e descrição informal da aula de orientação a objetos descrita no artigo](/bandeirinhas/)
+ * [código e descrição informal da aula de orientação a objetos descrita no artigo](https://abav.lugaralgum.com/mestrado/bandeirinhas/)
 
  * [versão em inglês da aula](https://medium.com/@villares/object-orientation-with-bandeirinhas-part-1-7-7765ab596d95)
 
@@ -58,7 +58,7 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em
 
 VILLARES, A. B. A.; MOREIRA, D. DE C. **Python on the Landscape of Programming Tools for Design and Architectural Education** Presented at the SIGRADI 2017, Concepcíon, Chile.
 
-* [abstract / resumo / full text & raw data links](https://villares.github.io/mestrado/VILLARES_MOREIRA_SIGRADI_2017)
+* [abstract / resumo / full text & raw data links](https://abav.lugaralgum.com/mestrado/VILLARES_MOREIRA_SIGRADI_2017)
 
 #### repositório
 
