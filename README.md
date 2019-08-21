@@ -6,9 +6,8 @@
 
 #### *Taxonomy of themes for teaching programming in a visual context*
 
->[repositorio.unicamp.br/jspui/handle/REPOSIP/334207](http://repositorio.unicamp.br/jspui/handle/REPOSIP/334207)
-> defesa em 25/02/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp
-> orientador/ *advisor*: Daniel de Carvalho Moreira
+> defesa em 25/02/2019 - pograma de pós-graduação Arquitetura, Tecnologia e Cidade - FEC/Unicamp <br>
+> orientador/ *advisor*: Daniel de Carvalho Moreira <br>
 
 #### resumo
 
@@ -32,9 +31,9 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 * [*Processing Python Mode examples*](http://www.lugaralgum.com/omeka-c/collections/show/1)
 
-#### Texto da dissertação
+#### Texto da dissertação / *full text*
 
-* [PDF](https://github.com/villares/mestrado/blob/master/assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
+* [repositorio.unicamp.br/jspui/handle/REPOSIP/334207](http://repositorio.unicamp.br/jspui/handle/REPOSIP/334207) <br>
 
 ----
 
