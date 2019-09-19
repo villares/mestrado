@@ -20,6 +20,9 @@ Como cientistas, observam o comportamento de sistemas complexos, formando hipót
 <i>Na minha opinião, todo artista utilizando software deveria ser alfabetizado em software. O que alfabetização significa no contexto do software? Alan Kay, um inovador no pensamento sobre o computador como um meio, escreveu: A habilidade de ‘ler’ um meio significa que você pode acessar os materiais e as ferramentas criadas pelos outros. A habilidade de ‘escrever’ em um meio significa que você pode gerar materiais e ferramentas para os outros. Você precisa dos dois para ser alfabetizado. Na escrita, as ferramentas de que você precisa são retóricas; elas demonstram e convencem. Na escrita computacional, as ferramentas que você gera são processos; elas simulam e decidem</i>
 — Casey Reas, em tradução de Patrícia Oakim
 
+
+TODO: Schachman "Alternative Programmer"
+
 ---
 
 AMIRI, Faramarz. Programming as Design: The Role of Programming in Interactive Media Curriculum in Art and Design. International Journal of Art & Design
