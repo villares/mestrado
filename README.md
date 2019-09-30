@@ -57,7 +57,7 @@ VILLARES, A. B. A.; MOREIRA, D. DE C. **Python on the Landscape of Programming T
 
 ### outros materiais
 
-#### Omeka e Tema Tres
+#### Omeka e TemaTres
 
 [Plugin LcSuggest para Omeka Classic sugerir em um campo os termos de um vocabulário servido pelo TemaTres](https://abav.lugaralgum.com/mestrado/Omeka-LcSuggest-integration-TemaTres)
 
