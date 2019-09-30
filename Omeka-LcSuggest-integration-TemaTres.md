@@ -1,22 +1,17 @@
 # **Para Omeka sugerir em um campo termos de um vocabulário servido pelo TemaTres**
 
 
+- Instalar o plugin **LcSuggest** (para Omeka Classic). Encontre os arquivos originais do plugin em: [`github.com/omeka/plugin-LcSuggest`](https://github.com/omeka/plugin-LcSuggest)
 
-- Instalar o plugin **LcSuggest** (para Omeka Classic)
-  Arquivos originais do plugin: https://github.com/omeka/plugin-LcSuggest
+- `[utilize o procedimento normal de instalação de plugins]`
 
-[procedimento normal de instalação de plugins]
+- Identificar a **URL** em que o seu **vocabulário TemaTres é servido** Exemplo: [`https://www.lugaralgum.com/tematres/vocab/`](https://www.lugaralgum.com/tematres/vocab/)
 
+- Alterar o arquivo arquivo do plugin na instalação do Omeka: **`/models/Table/LcSuggest.php`** 
 
+- `[pode ser necessário desinstalar e instalar novamente o plugin]`
 
-- Identificar a **URL** em que o seu **vocabulário TemaTres é servido**Exemplo: http://www.lugaralgum.com/tematres/vocab/
-
-
-
-- Alterar o arquivo arquivo do plugin na instalação do Omeka: **/models/Table/LcSuggest.php** 
-  [pode ser necessário desinstalar e instalar novamente o plugin]
-
-Exemplo da modificação abaixo:
+Exemplo da modificação:
 
 ```php
 <?php
