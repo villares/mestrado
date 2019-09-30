@@ -37,7 +37,7 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 ----
 
-### artigos e outros materiais
+### artigos
 
 #### Ensino de programação em um contexto de exploração gráfica com Processing modo Python
 
@@ -54,6 +54,12 @@ VILLARES, A. B. A.; MOREIRA, D. de C.; GOMES, M. R. **Ensino de programação em
 VILLARES, A. B. A.; MOREIRA, D. DE C. **Python on the Landscape of Programming Tools for Design and Architectural Education** Presented at the SIGRADI 2017, Concepcíon, Chile.
 
 * [abstract / resumo / full text & raw data links](https://abav.lugaralgum.com/mestrado/VILLARES_MOREIRA_SIGRADI_2017)
+
+### outros materiais
+
+#### Omeka e Tema Tres
+
+[Plugin LcSuggest para Omeka Classic sugerir em um campo os termos de um vocabulário servido pelo TemaTres](https://abav.lugaralgum.com/mestrado/Omeka-LcSuggest-integration-TemaTres)
 
 #### repositório
 
