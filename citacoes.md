@@ -18,16 +18,21 @@ Como cientistas, observam o comportamento de sistemas complexos, formando hipót
 
 
 <i>Na minha opinião, todo artista utilizando software deveria ser alfabetizado em software. O que alfabetização significa no contexto do software? Alan Kay, um inovador no pensamento sobre o computador como um meio, escreveu: A habilidade de ‘ler’ um meio significa que você pode acessar os materiais e as ferramentas criadas pelos outros. A habilidade de ‘escrever’ em um meio significa que você pode gerar materiais e ferramentas para os outros. Você precisa dos dois para ser alfabetizado. Na escrita, as ferramentas de que você precisa são retóricas; elas demonstram e convencem. Na escrita computacional, as ferramentas que você gera são processos; elas simulam e decidem</i>
-— Casey Reas, em tradução de Patrícia Oakim
+— Casey Reas, em tradução de Patrícia Oakim.
 
 
-TODO: Schachman "Alternative Programmer"
+Patrícia Oakim traduz e ressalta trecho de Schachman (2012) que afirma estar surgindo  uma  nova  geração de  programadores alternativos com diferentes interesses: 
+> <i>...esses  programadores  “alternativos”  são  pessoas  que  não  se  identificam  como programadores, mas que regularmente programam computadores  para  alcançar  seus  objetivos.  Programadores  alternativos  podem  incluir  músicos,  performers,  escritores,  artistas  visuais,  designers,  cientistas  e  ativistas. </i>
 
 ---
 
-AMIRI, Faramarz. Programming as Design: The Role of Programming in Interactive Media Curriculum in Art and Design. International Journal of Art & Design
+AMIRI, Faramarz. *Programming as Design*: The Role of Programming in Interactive Media Curriculum in Art and Design. International Journal of Art & Design
 Education, v. 30, n. 2, p. 200–210, June 2011. Disponível em: <https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1476-8070.2011.01680.x>. Acesso em: 29 dez. 2018.
 
-DOWNEY, Allen B. Think Python: How to Think Like a Computer Scientist. 2nd ed. Sebastopol: O’Reilly, 2015.
+DOWNEY, Allen B. *Think Python*: How to Think Like a Computer Scientist. 2nd ed. Sebastopol: O’Reilly, 2015.
 
-______. [Pense em Python: Pense como um cientista da computação](https://penseallen.github.io/PensePython2e/). Tradução de Sheila Gomes. São Paulo, Novatec, 2016.
+______. [*Pense em Python* : Pense como um cientista da computação](https://penseallen.github.io/PensePython2e/). Tradução de Sheila Gomes. São Paulo, Novatec, 2016.
+
+OAKIM, Patricia, [*Arte feita em código*: um estudo de caso sobre a linguagem de programação Processing e sua utilização por artistas-programadores](https://www.intermeioscultural.com.br/arte-feita-em-codigo-um-estudo-de), São Paulo, Intermeios, 2019.
+
+SCHACHMAN, Toby. *Alternative programming interfaces for alternative programmers.*  ACM international symposium on New ideas, new paradigms, and reflections on  programming and software, p.1N10, 2012.  Anais eletrônicos. Disponível em < http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.476.6506&rep=rep1&type=pdf>.
