@@ -24,4 +24,8 @@ url: https://abav.lugaralgum.com
 twitter_username: villares
 github_username: villares
 
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
