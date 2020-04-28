@@ -1,4 +1,6 @@
----
+
+
+----
 
 # Ensino de programação em um contexto de exploração gráfica com Processing modo Python
 Alexandre B. A. Villares; Daniel de Carvalho Moreira; Monica Rizzolli Gomes.
