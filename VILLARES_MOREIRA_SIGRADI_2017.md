@@ -1,3 +1,4 @@
+
 ---
 
 # Python on the Landscape of Programming Tools for Design and Architectural Education
@@ -7,7 +8,6 @@ Alexandre Barrozo do Amaral Villares; Daniel de Carvalho Moreira.
 ---
 
  * [full text](https://www.proceedings.blucher.com.br/article-details/python-on-the-landscape-of-programming-tools-for-design-and-architectural-education-27628)
-
  * [raw data](https://villares.github.io/Resources-for-teaching-programming/)
 
 --- 
@@ -24,7 +24,6 @@ Atualmente a maioria dos softwares profissionais de computação gráfica e mode
 ---
 
  * [full text](https://www.proceedings.blucher.com.br/article-details/python-on-the-landscape-of-programming-tools-for-design-and-architectural-education-27628)
-
  * [raw data](https://villares.github.io/Resources-for-teaching-programming/)
 
 ----
