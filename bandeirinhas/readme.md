@@ -142,7 +142,7 @@ A vantagem da estruturação e encapsulamento de termos um objeto bandeira criad
 ```python
 def setup():
     """ Instancia três bandeirinhas """
-    global bandeira_0, baindeira_1, bandeira_2
+    global bandeira_0, bandeira_1, bandeira_2
     size(100, 100)  # área de desenho (width, height)
     meia_largura, meia_altura = width / 2, height / 2
     bandeira_0 = Bandeirinha(meia_largura, meia_altura)
