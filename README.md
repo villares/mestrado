@@ -33,8 +33,9 @@ O ensino de programação para artistas visuais, designers e arquitetos apresent
 
 #### Texto da dissertação / *full text*
 
-* [repositorio.unicamp.br/jspui/handle/REPOSIP/334207](http://repositorio.unicamp.br/jspui/handle/REPOSIP/334207) <br>
-
+* [No repositório da Unicamp](https://hdl.handle.net/20.500.12733/1636272) <br>
+* [Versão com mais ajustes cosméticos](assets/Taxonomia_de_temas_para_ensino_de_prog_em_contexto_visual.pdf)
+  
 ----
 
 ### artigos
